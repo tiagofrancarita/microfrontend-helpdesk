@@ -67,7 +67,7 @@ import { LoginComponent } from './components/login/login.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
-    ToastrModule.forRoot({timeOut: 4000,closeButton: true,progressBar: true}),
+    ToastrModule.forRoot({timeOut: 10000, closeButton: true, progressBar: true}),
  
   ],
   providers: [],
