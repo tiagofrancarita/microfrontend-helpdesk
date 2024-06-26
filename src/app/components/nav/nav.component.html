@@ -1,1 +1,46 @@
-<p>nav works!</p>
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+        <img src="../../assets/img/side-image.svg" alt="Imagem de navegação" class="logo">
+        <mat-nav-list class="nav-list">
+
+            <a mat-list-item routerLink="/" (click)="drawer.toggle()">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </a>
+
+            <a mat-list-item routerLink="/" (click)="drawer.toggle()">
+                <i class="material-icons">people</i>
+                <span>Cadastro de Técnicos</span>
+            </a>
+
+            <a mat-list-item routerLink="/" (click)="drawer.toggle()">
+                <i class="material-icons">person_add</i>
+                <span>Cadastro de Clientes</span>
+            </a>
+
+            <a mat-list-item routerLink="/" (click)="drawer.toggle()">
+                <i class="material-icons">report_problem</i>
+                <span>Cadastro de Chamados</span>
+            </a>
+
+            <a mat-list-item routerLink="/" (click)="drawer.toggle()">
+                <i class="material-icons">note_add</i>
+                <span>Cadastro de Ordem de Serviço</span>
+            </a>
+
+            <a mat-list-item routerLink="/" (click)="drawer.toggle()">
+                <i class="material-icons">logout</i>
+                <span>Logout</span>
+            </a>
+            
+
+        </mat-nav-list>
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+      <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  
+  </mat-drawer-container>
