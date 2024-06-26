@@ -19,12 +19,7 @@ export class LoginComponent implements OnInit {
   email = new FormControl(null, Validators.email);
   senha = new FormControl(null, Validators.minLength(8));
 
-
-
-
   constructor(private toast: ToastrService) { }
-
-
 
   ngOnInit(): void {
   }
