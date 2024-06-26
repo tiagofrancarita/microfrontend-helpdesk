@@ -25,14 +25,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-// Componentes do projeto
 import { ToastrModule } from 'ngx-toastr';
 import { NgxMaskModule } from 'ngx-mask';
-
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +60,7 @@ import { NgxMaskModule } from 'ngx-mask';
     MatListModule,
     MatCardModule,
     ToastrModule.forRoot({timeOut: 4000,closeButton: true,progressBar: true}),
-    NgxMaskModule.forRoot()
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]
